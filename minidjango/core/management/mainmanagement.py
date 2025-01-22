@@ -61,5 +61,7 @@ class ManagementSystem:
             runserver(address, port)
         elif subcommand in ['help', '--help', '-h']:
             sys.stdout.write(self.help_text())
+        elif subcommand in ['version', '--version']:
+            sys.stdout.write('MiniDjango 1.0.0')
         else:
             sys.stdout.write('Command not found. use manage.py help to get help. \n \n')
