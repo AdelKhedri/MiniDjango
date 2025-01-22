@@ -26,8 +26,10 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
 
 
 
-def runserver():
-    server = HTTPServer(('localhost', 8000), SimpleHTTPRequestHandler)
-    text = f'{datetime.now()} \nMiniDjango version 1.0.0 \nStarting development server at http://127.0.0.1:8000 \nQuit the server with CONTROL+C \n\n'
+def runserver(ip, port):
+    port = int(port)
+    ip = str(ip)
+    server = HTTPServer((ip, port), SimpleHTTPRequestHandler)
+    text = f'{datetime.now()} \nMiniDjango version 1.0.0 \nStarting development server at http://{ip}:{port} \nQuit the server with CONTROL+C \n\n'
     sys.stdout.write(text)
     server.serve_forever()
