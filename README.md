@@ -12,6 +12,14 @@ python manage.py runserver
 python manage.py runserver 127.0.0.2:8001
 ```
 
+## Features:
+- Model for extend and create your models
+- IntegerField, CharField
+- urls: need to upgrade
+- template_renderer: need to upgrade
+- docs: comming soon
+
+[See full docs]('https://github.com/AdelKhedri/MiniDjango/docs')
 ## add views and urls
 
 add your **function base** view in minidjang/views.py

@@ -1,0 +1,6 @@
+site_name: My Docs
+theme: readthedocs
+
+nav:
+  - Home: index.md
+  - QuicStart: quic_start.md
